@@ -1,0 +1,57 @@
+class Cat
+{
+    public static void meow()
+    {
+        System.out.println("meow");
+    }
+}
+class Munchkin extends Cat
+{
+    public static void meow()
+    {
+        System.out.println("yown");
+    }
+}
+public class CatUtil
+{
+     public static void main(String []args)
+     {
+        Cat kitty=new Cat();
+        Cat munch=new Munchkin();
+        kitty.meow();
+        munch.meow();
+     }
+}
+
+Output:
+meow
+meow
+
+class Cat
+{
+    public void meow()
+    {
+        System.out.println("meow");
+    }
+}
+class Munchkin extends Cat
+{
+    public void meow()
+    {
+        System.out.println("yown");
+    }
+}
+public class CatUtil
+{
+     public static void main(String []args)
+     {
+        Cat kitty=new Cat();
+        Cat munch=new Munchkin();
+        kitty.meow();
+        munch.meow();
+     }
+}
+
+Output:
+meow
+yown
